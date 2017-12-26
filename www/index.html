@@ -93,21 +93,21 @@
 
                     <div class="page-content">
 
-                      <div class="card">
-                        <!--  <div class="card-header center">Clapping</div>-->
-                          <div class="card-content">
-                              <div class="card-content-inner"><img style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
-                          </div>
-                          <!--  <div class="card-footer">Card Footer</div>-->
-                      </div>
-
-                      <div class="card">
-
-                          <div class="card-content">
-                            <div class="card-content-inner"><img style="width:100%" src="./image/White_Thumbs_Down_Sign_Emoji.png"></div>
+                        <div class="card">
+                            <!--  <div class="card-header center">Clapping</div>-->
+                            <div class="card-content">
+                                <div class="card-content-inner"><img style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
+                            </div>
+                            <!--  <div class="card-footer">Card Footer</div>-->
                         </div>
 
-                      </div>
+                        <div class="card">
+
+                            <div class="card-content">
+                                <div class="card-content-inner"><img style="width:100%" src="./image/White_Thumbs_Down_Sign_Emoji.png"></div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -123,24 +123,24 @@
             <script type="text/javascript" src="js/customjs/initScript.js"></script>
 
             <script>
-            function playAudio(url) {
-    // Play the audio file at url
-    var my_media = new Media(url,
-        // success callback
-        function () {
-            console.log("playAudio():Audio Success");
-        },
-        // error callback
-        function (err) {
-            console.log("playAudio():Audio Error: " + err);
-        }
-    );
-    // Play audio
-    my_media.play();
-}
+                function playAudio(url) {
+                    // Play the audio file at url
+                    var my_media = new Media(url,
+                        // success callback
+                        function() {
+                            console.log("playAudio():Audio Success");
+                        },
+                        // error callback
+                        function(err) {
+                            console.log("playAudio():Audio Error: " + err);
+                        }
+                    );
+                    // Play audio
+                    my_media.play();
+                }
 
                 $(function() {
-playAudio("./sound/1.mp3")
+                    playAudio("./sound/1.mp3")
                     lang = getCookie("lang", "selectedLang", checkLang());
                     mainPage();
                 })
