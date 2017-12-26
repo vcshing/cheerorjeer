@@ -47,3 +47,15 @@ menuSiteArr.push("https://www.krtco.com.tw/");
 menuSiteArr.push("https://www.tymetro.com.tw");
 menuSiteArr.push("http://www.thsrc.com.tw");
 menuSiteArr.push("http://www.railway.gov.tw/tw/");
+
+ion.sound({
+    sounds: [
+        {name: "audience_boo"},
+        {name: "clapping_and_cheers"}
+    ],
+
+    path: "sound/",
+    preload: true,
+    multiplay: false,
+    volume: 1
+});

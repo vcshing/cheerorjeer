@@ -96,7 +96,7 @@
                         <div class="card">
                             <!--  <div class="card-header center">Clapping</div>-->
                             <div class="card-content">
-                                <div class="card-content-inner"><img style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
+                                <div class="card-content-inner"><img class="imgclap" style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
                             </div>
                             <!--  <div class="card-footer">Card Footer</div>-->
                         </div>
@@ -104,7 +104,7 @@
                         <div class="card">
 
                             <div class="card-content">
-                                <div class="card-content-inner"><img style="width:100%" src="./image/White_Thumbs_Down_Sign_Emoji.png"></div>
+                                <div class="card-content-inner"><img class="imgjeer" style="width:100%" src="./image/White_Thumbs_Down_Sign_Emoji.png"></div>
                             </div>
 
                         </div>
@@ -115,6 +115,8 @@
 
             <script type="text/javascript" src="cordova.js"></script>
             <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+            <script type="text/javascript" src="js/library/ion.sound.js"></script>
+
             <script type="text/javascript" src="js/customjs/langArr.js"></script>
             <script type="text/javascript" src="js/customjs/function.js"></script>
             <script type="text/javascript" src="js/customjs/my-app.js"></script>
@@ -123,24 +125,12 @@
             <script type="text/javascript" src="js/customjs/initScript.js"></script>
 
             <script>
-                function playAudio(url) {
-                    // Play the audio file at url
-                    var my_media = new Media(url,
-                        // success callback
-                        function() {
-                            alert("playAudio():Audio Success");
-                        },
-                        // error callback
-                        function(err) {
-                            alert("playAudio():Audio Error: " + err);
-                        }
-                    );
-                    // Play audio
-                    my_media.play();
-                }
+
 
                 $(function() {
-                    
+              
+
+
                     lang = getCookie("lang", "selectedLang", checkLang());
                     mainPage();
                 })
