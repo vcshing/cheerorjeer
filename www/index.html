@@ -71,7 +71,11 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding app_title">Clapping Or Jeering</div>
+                    <div class="sliding" style="margin-left: auto;margin-right: auto; width:100%">
+                   <p class="buttons-row">
+                     <a href="#" class="titleButton button button-big button-raised"><span >Cheer Or Jeer</span> (<span class="">Stop</span>)</a>
+                   </p>
+                 </div>
 
                     <div class="right">
 
@@ -98,7 +102,14 @@
                             <div class="card-content">
                                 <div class="card-content-inner"><img class="imgclap" style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
                             </div>
-                            <!--  <div class="card-footer">Card Footer</div>-->
+                            <div class="card-footer">
+
+  <a href="#" class="button button-raised clappingTypeA button-fill">Type A</a>
+  <a href="#" class="button button-raised clappingTypeB">Type B</a>
+
+
+
+ </div>
                         </div>
 
                         <div class="card">
@@ -128,7 +139,7 @@
 
 
                 $(function() {
-              
+
 
 
                     lang = getCookie("lang", "selectedLang", checkLang());
