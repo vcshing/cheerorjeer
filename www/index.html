@@ -128,11 +128,11 @@
                     var my_media = new Media(url,
                         // success callback
                         function() {
-                            console.log("playAudio():Audio Success");
+                            alert("playAudio():Audio Success");
                         },
                         // error callback
                         function(err) {
-                            console.log("playAudio():Audio Error: " + err);
+                            alert("playAudio():Audio Error: " + err);
                         }
                     );
                     // Play audio
@@ -140,7 +140,7 @@
                 }
 
                 $(function() {
-                    playAudio("./sound/1.mp3")
+                    
                     lang = getCookie("lang", "selectedLang", checkLang());
                     mainPage();
                 })

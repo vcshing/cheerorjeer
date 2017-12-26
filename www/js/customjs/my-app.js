@@ -75,7 +75,8 @@ $$(document).on('deviceready', function() {
           autoShow: true
       });
     });
-
+playAudio("./sound/1.mp3")
+playAudio("sound/1.mp3")
     //navigator.vibrate([1000, 1000, 3000, 1000, 5000]);
 });
 
