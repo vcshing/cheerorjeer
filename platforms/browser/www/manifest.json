@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Cheer Or Jeer",
-  "short_name": "Cheer Or Jeer",
+  "name": "Cheers Or Jeers",
+  "short_name": "Cheers Or Jeers",
   "version": "com.skyexplorer.cheerorjeer",
-  "description": "Cheer Or Jeer",
+  "description": "Cheers Or Jeers.",
   "author": "Sky Explorer",
   "icons": [
     {

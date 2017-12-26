@@ -71,7 +71,11 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-                    <div class="center sliding app_title">Clapping Or Jeering</div>
+                    <div class="sliding" style="margin-left: auto;margin-right: auto; width:100%">
+                   <p class="buttons-row">
+                     <a href="#" class="titleButton button button-big button-raised"><span >Cheer Or Jeer</span> (<span class="">Stop</span>)</a>
+                   </p>
+                 </div>
 
                     <div class="right">
 
@@ -93,21 +97,28 @@
 
                     <div class="page-content">
 
-                      <div class="card">
-                        <!--  <div class="card-header center">Clapping</div>-->
-                          <div class="card-content">
-                              <div class="card-content-inner"><img style="width:100%" src="image/Clapping_Hands_Emoji.png"></div>
-                          </div>
-                          <!--  <div class="card-footer">Card Footer</div>-->
-                      </div>
+                        <div class="card">
+                            <!--  <div class="card-header center">Clapping</div>-->
+                            <div class="card-content">
+                                <div class="card-content-inner"><img class="imgclap" style="width:100%" src="./image/Clapping_Hands_Emoji.png"></div>
+                            </div>
+                            <div class="card-footer">
 
-                      <div class="card">
+  <a href="#" class="button button-raised clappingTypeA button-fill">Type A</a>
+  <a href="#" class="button button-raised clappingTypeB">Type B</a>
 
-                          <div class="card-content">
-                            <div class="card-content-inner"><img style="width:100%" src="image/White_Thumbs_Down_Sign_Emoji.png"></div>
+
+
+ </div>
                         </div>
-                      
-                      </div>
+
+                        <div class="card">
+
+                            <div class="card-content">
+                                <div class="card-content-inner"><img class="imgjeer" style="width:100%" src="./image/White_Thumbs_Down_Sign_Emoji.png"></div>
+                            </div>
+
+                        </div>
                     </div>
 
                 </div>
@@ -115,6 +126,8 @@
 
             <script type="text/javascript" src="cordova.js"></script>
             <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+            <script type="text/javascript" src="js/library/ion.sound.js"></script>
+
             <script type="text/javascript" src="js/customjs/langArr.js"></script>
             <script type="text/javascript" src="js/customjs/function.js"></script>
             <script type="text/javascript" src="js/customjs/my-app.js"></script>
@@ -123,7 +136,11 @@
             <script type="text/javascript" src="js/customjs/initScript.js"></script>
 
             <script>
+
+
                 $(function() {
+
+
 
                     lang = getCookie("lang", "selectedLang", checkLang());
                     mainPage();

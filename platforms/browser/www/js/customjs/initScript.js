@@ -1,7 +1,7 @@
 var defaultMapItem = getCookie("selectMapItem", "", "0")
 
 function pageInit() {
-
+/*
     setLang();
       myApp.showPreloader();
     frontEndTranslateToSelectedLang(defaultLangArr, function(translatedLangArr) {
@@ -11,6 +11,7 @@ function pageInit() {
     setTimeout(function(){
       myApp.hidePreloader();
     },2000)
+    */
 }
 
 function mainPage() {
