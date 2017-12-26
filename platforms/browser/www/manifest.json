@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Best Package",
-  "short_name": "Best Package",
-  "version": "com.skyexplorer.goodprice",
-  "description": "Best Package",
+  "name": "Cheer Or Jeer",
+  "short_name": "Cheer Or Jeer",
+  "version": "com.skyexplorer.cheerorjeer",
+  "description": "Cheer Or Jeer",
   "author": "Sky Explorer",
   "icons": [
     {

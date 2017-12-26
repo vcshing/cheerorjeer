@@ -29,7 +29,8 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-console": {},
       "cordova-plugin-statusbar": {},
-      "cordova-plugin-admobpro": {}
+      "cordova-plugin-admobpro": {},
+      "cordova-plugin-media": {}
     },
     "platforms": [
       "browser"
@@ -41,7 +42,9 @@
     "cordova-plugin-console": "^1.1.0",
     "cordova-plugin-dialogs": "~1.3.0",
     "cordova-plugin-extension": "^1.5.3",
+    "cordova-plugin-file": "^5.0.0",
     "cordova-plugin-inappbrowser": "~1.5.0",
+    "cordova-plugin-media": "^4.0.0",
     "cordova-plugin-statusbar": "^2.4.0",
     "cordova-plugin-vibration": "~2.1.2",
     "cordova-plugin-whitelist": "^1.3.3",
