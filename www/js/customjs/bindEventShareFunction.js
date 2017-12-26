@@ -2,10 +2,10 @@ var clappingMP3 = "clapping_and_cheers"
 
 $(".imgclap").bind("click", function() {
     ion.sound.stop("audience_boo");
-    if (clappingType == "A") {
+
         ion.sound.stop(clappingMP3);
         ion.sound.play(clappingMP3);
-    }
+    
 })
 
 $(".imgjeer").bind("click", function() {
