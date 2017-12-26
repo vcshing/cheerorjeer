@@ -3,9 +3,11 @@ var clappingMP3 = "clapping_and_cheers"
 $(".imgclap").bind("click", function() {
     ion.sound.stop("audience_boo");
 
-        ion.sound.stop(clappingMP3);
+        ion.sound.stop("clapping");
+          ion.sound.stop("clapping_and_cheers");
+
         ion.sound.play(clappingMP3);
-    
+
 })
 
 $(".imgjeer").bind("click", function() {
@@ -16,7 +18,8 @@ $(".imgjeer").bind("click", function() {
 })
 
 $(".titleButton").bind("click", function() {
-    ion.sound.stop(clappingMP3);
+  ion.sound.stop("clapping");
+    ion.sound.stop("clapping_and_cheers");
     ion.sound.stop("audience_boo");
 
 })
